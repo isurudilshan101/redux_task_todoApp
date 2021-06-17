@@ -34,11 +34,7 @@ export default function TodoForm() {
     if (!value) return alert("please enter todo");
     console.log(value);
 
-    dispatch(
-      addTodo({
-        title: value,
-      })
-    );
+    dispatch(addTodo(value));
 
     setValue("");
   };
